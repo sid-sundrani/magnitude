@@ -172,7 +172,7 @@ def custom_compile(THIRD_PARTY, INTERNAL):
 # Redirect output to a file
 tee = open(
     os.path.join(
-        tempfile.gettempdir(),
+        os.getcwd(),
         PACKAGE_SHORT_NAME +
         '.install'),
     'a+')
